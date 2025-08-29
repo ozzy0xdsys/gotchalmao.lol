@@ -23,7 +23,7 @@ log.setLevel(logging.INFO)
 
 CLIENT_ID = "1410909662865522738"
 CLIENT_SECRET = "dJoMgr7td7F_Ukv4gY--wIHnygKcokih"
-REDIRECT_URI = "http://gotchalmao.lol:25516/callback"
+REDIRECT_URI = "http://gotchalmao.lol/callback"
 
 auth_url = f"https://discord.com/oauth2/authorize?client_id=1410909662865522738&response_type=code&redirect_uri=http%3A%2F%2Fgotchalmao.lol%3A25516%2Fcallback&integration_type=1&scope=identify+applications.commands"
 
