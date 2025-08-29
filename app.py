@@ -179,7 +179,7 @@ HOME_PAGE = """
     <a href="/leaks/restorecord">Restorecord Search</a>
     <a href="/records">Records</a>
     <a href="/privacy">Privacy</a>
-    <a href='https://discord.com/oauth2/authorize?client_id=1410909662865522738&response_type=code&redirect_uri=http%3A%2F%2Fgotchalmao.lol%3A25516%2Fcallback&integration_type=1&scope=identify+applications.commands'>Add to Discord</a>
+    <a href='https://discord.com/oauth2/authorize?client_id=1410909662865522738&response_type=code&redirect_uri=http%3A%2F%2Fgotchalmao.lol%2Fcallback&integration_type=1&scope=identify+applications.commands'>Add to Discord</a>
   </div>
   <h1>Welcome</h1>
   <p>This is hosted to store any data obtained on anyone using any means. For example, data leaks or stealer logs.</p>
@@ -363,9 +363,6 @@ def download_restorecord():
         mimetype="text/csv"
     )
 
-@app.route("/discord")
-def loginwithdiscord():
-    return "soon"
 
 # ---------------- CSV SEARCH FUNCTION ----------------
 def search_csv(file_path, search_term, max_results=10):
@@ -473,4 +470,4 @@ def api_restorecord():
 
 # ---------------- RUN ----------------
 if __name__ == "__main__":
-    app.run("0.0.0.0", 25516)
+    app.run("0.0.0.0", 80)
